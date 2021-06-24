@@ -7,7 +7,7 @@ Saves media files from a Telegram chat
 2. Move to cloned folder ```cd get-telegram-multimedia/```
 3. Create virtual environment typing ```virtualenv venv``` and activate it with ```source venv/bin/activate```
 4. `pip3 install -r requirements.txt`
-5. Enter _API_ID_ and _API_HASH_ credentials at the top of `main.py`
+5. Enter `API_ID` and `API_HASH` credentials at the top of `main.py`
    > Note: You must get your own from https://my.telegram.org, under API Development
 6. `python3 main.py`
 7. Now you have all saved images in `img/` folder
