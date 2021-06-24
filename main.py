@@ -43,7 +43,7 @@ it with all it's content? [y/(n)]: ").lower()
     if answer in ("yes", "y"):
         os.system("rm -rf %s" % MEDIA_DIR)
         line_break = ""
-        print("{line_break}Deleting media folder")
+        print(f"{line_break}Deleting media folder")
 
         os.mkdir(MEDIA_DIR)
         print(f"{line_break}Media folder created{line_break}")
