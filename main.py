@@ -35,21 +35,21 @@ p2 = re.compile(r".+\@(.+) \n")
 
 line_break = "\n"
 if os.path.exists(MEDIA_DIR):
-    answer = input("\n> Media folder has been found. Do you want to delete\
-                   it with all its content? [y/(n)]: ").lower()
+    answer = input(f"{line_break}> Media folder has been found. Do you want to delete \
+it with all it's content? [y/(n)]: ").lower()
     while answer not in ("yes", "y", "no", "n", ""):
         answer = input('> You must answer "yes" (y) or "no" (n): ').lower()
 
     if answer in ("yes", "y"):
         os.system("rm -rf %s" % MEDIA_DIR)
         line_break = ""
-        print("\nDeleting media folder")
+        print("{line_break}Deleting media folder")
 
         os.mkdir(MEDIA_DIR)
-        print(f"{line_break}Media folder created\n")
+        print(f"{line_break}Media folder created{line_break}")
 else:
     os.mkdir(MEDIA_DIR)
-    print(f"{line_break}Media folder created\n")
+    print(f"{line_break}Media folder created{line_break}")
 
 messages = client.get_messages(CHAT_ALIAS, None)
 
